@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="KAILINK — Redes, conectividad y telecomunicaciones." />
+    <title>KAILINK | Conectamos lo que importa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .project-visual img { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(.9) contrast(1.05); }
+      .project-visual::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, transparent 55%, rgba(7, 17, 35, .45)); }
+      .work-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 24px; }
+      .work-gallery figure { margin: 0; min-height: 245px; position: relative; overflow: hidden; background: #152440; }
+      .work-gallery img { width: 100%; height: 100%; position: absolute; object-fit: cover; transition: transform .35s ease; }
+      .work-gallery figure:hover img { transform: scale(1.04); }
+      .work-gallery figcaption { position: absolute; z-index: 1; left: 17px; bottom: 15px; color: white; font: 700 11px Manrope, sans-serif; letter-spacing: .2px; }
+      .work-gallery figcaption span { color: #b9c8de; font: 10px 'DM Mono', monospace; display: block; margin-bottom: 4px; letter-spacing: .8px; }
+      @media (max-width: 570px) { .work-gallery { grid-template-columns: 1fr; } .work-gallery figure { min-height: 270px; } }
+    </style>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="header">
+        <a class="brand" href="#inicio" aria-label="Kailink, inicio"><img src="assets/kailink-logo-transparent.png" alt="KAILINK" /></a>
+        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><i></i><i></i></button>
+        <nav class="nav" aria-label="Navegación principal">
+          <a href="#servicios">Servicios</a><a href="#proyectos">Trabajos</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a>
+          <a class="nav-cta" href="#contacto">Cotizar servicio <span>↗</span></a>
+        </nav>
+      </header>
+
+      <main>
+        <section id="inicio" class="hero section">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span></span> Para tu hogar o negocio</p>
+            <h1>Conectamos<br /><em>lo que importa.</em></h1>
+            <p class="hero-description">Instalamos redes, internet y seguridad con atención cercana para que todo funcione fácil, bien y sin complicaciones.</p>
+            <div class="hero-actions"><a class="button primary" href="#contacto">Solicitar evaluación <span>↗</span></a><a class="button text-button" href="#servicios">Ver soluciones <span>↓</span></a></div>
+            <p class="coverage-badge"><span>⌖</span> Cobertura en todo Chiloé</p>
+          </div>
+          <div class="hero-visual" aria-label="Visualización de red conectada">
+            <div class="radar-grid"></div><div class="orbital orbital-a"></div><div class="orbital orbital-b"></div>
+            <div class="signal-core"><svg viewBox="0 0 76 76" aria-hidden="true"><path d="M20 12h12v20L51 12h16L43 37l25 27H51L32 43v21H20V12Z"/></svg></div>
+            <span class="node node-one"></span><span class="node node-two"></span><span class="node node-three"></span><span class="node node-four"></span>
+            <p class="visual-label label-one">RED ACTIVA <b>99.9%</b></p><p class="visual-label label-two">KAILINK / 01</p>
+          </div>
+          <div class="hero-foot reveal"><p>Soluciones claras para hogares, locales y pequeños negocios.</p><a href="#proyectos">Ver nuestros trabajos <span>↘</span></a></div>
+        </section>
+
+        <section id="servicios" class="services section">
+          <div class="section-head reveal"><div><p class="eyebrow"><span></span> Lo que hacemos</p><h2>Soluciones simples,<br />bien hechas.</h2></div><p>Ya sea para tu casa, local u oficina, buscamos la alternativa que realmente necesitas y se ajusta a tu espacio.</p></div>
+          <div class="service-grid">
+            <article class="service-card featured reveal"><div class="service-number">01</div><div class="service-icon network-icon"><i></i><i></i><i></i></div><h3>Redes e internet</h3><p>WiFi y red cableada estables para tu hogar, oficina o local.</p><a href="#contacto" aria-label="Cotizar redes e internet">↗</a></article>
+            <article class="service-card reveal"><div class="service-number">02</div><div class="service-icon"><span class="antenna"></span></div><h3>Telecomunicaciones</h3><p>Enlaces punto a punto y cobertura para mantener tus equipos conectados.</p><a href="#contacto" aria-label="Cotizar telecomunicaciones">↗</a></article>
+            <article class="service-card reveal"><div class="service-number">03</div><div class="service-icon camera-icon"><span></span></div><h3>Videovigilancia</h3><p>Cámaras para hogares, negocios y embarcaciones.</p><a href="#contacto" aria-label="Cotizar videovigilancia">↗</a></article>
+            <article class="service-card reveal"><div class="service-number">04</div><div class="service-icon rack-icon"><i></i><i></i><i></i></div><h3>Instalación de redes</h3><p>Orden, instalación y rendimiento en cada punto de tu red.</p><a href="#contacto" aria-label="Cotizar instalación de redes">↗</a></article>
+            <article class="service-card reveal"><div class="service-number">05</div><div class="service-icon satellite-icon"><span></span></div><h3>Conectividad Starlink</h3><p>Instalación y conexión para zonas apartadas y embarcaciones.</p><a href="#contacto" aria-label="Cotizar conectividad Starlink">↗</a></article>
+            <article class="service-card reveal"><div class="service-number">06</div><div class="service-icon support-icon">+</div><h3>Soporte y mantención</h3><p>Diagnóstico, mejoras y asistencia para que todo siga funcionando.</p><a href="#contacto" aria-label="Solicitar soporte">↗</a></article>
+          </div>
+        </section>
+
+        <section id="proyectos" class="projects section">
+          <div class="section-head reveal"><div><p class="eyebrow"><span></span> Trabajos recientes</p><h2>Espacios mejor<br />conectados.</h2></div><a class="line-link" href="#contacto">Hablemos de lo que necesitas <span>↗</span></a></div>
+          <div class="project-list">
+            <article class="project project-a reveal"><div class="project-visual"><img src="assets/trabajos/starlink-embarcacion.jpg" alt="Antena Starlink instalada en embarcación" /></div><div class="project-meta"><p>01 / STARLINK EN EMBARCACIÓN</p><h3>Antena instalada para<br />navegar siempre conectado.</h3><span>Starlink · Conectividad · Embarcaciones</span></div></article>
+            <article class="project project-b reveal"><div class="project-visual"><img src="assets/trabajos/camara-interior.jpeg" alt="Cámara de seguridad instalada" /></div><div class="project-meta"><p>02 / SEGURIDAD EN TERRENO</p><h3>Cámaras instaladas<br />para cuidar cada espacio.</h3><span>Cámaras · Monitoreo · Configuración</span></div></article>
+          </div>
+          <div class="work-gallery">
+            <figure class="reveal"><img src="assets/trabajos/camara-exterior.jpeg" alt="Cámara exterior instalada" /><figcaption><span>VIDEOVIGILANCIA</span>Instalación exterior</figcaption></figure>
+            <figure class="reveal"><img src="assets/trabajos/rack-red.jpeg" alt="Rack de red instalado" /><figcaption><span>REDES</span>Orden y conexión</figcaption></figure>
+            <figure class="reveal"><img src="assets/trabajos/instalacion-exterior.jpeg" alt="Trabajo de instalación en altura" /><figcaption><span>EN TERRENO</span>Instalación exterior</figcaption></figure>
+          </div>
+        </section>
+
+        <section id="nosotros" class="about section">
+          <div class="about-orbit" aria-hidden="true"></div><div class="about-mark">K</div>
+          <div class="about-copy reveal"><p class="eyebrow"><span></span> Acerca de KAILINK</p><h2>La tecnología funciona mejor cuando se entiende.</h2><p>Somos una empresa local y cercana. Te escuchamos, explicamos cada alternativa en simple y realizamos instalaciones cuidadas para que disfrutes tu conexión desde el primer día.</p><div class="stats"><div><strong>20</strong><span>proyectos<br />realizados</span></div><div><strong>Hogar</strong><span>y pequeños<br />negocios</span></div><div><strong>Claro</strong><span>desde la visita<br />a la instalación</span></div></div></div>
+        </section>
+
+        <section id="contacto" class="contact section">
+          <div class="contact-copy reveal"><p class="eyebrow"><span></span> Contacto</p><h2>Tu espacio mejor<br /><em>conectado.</em></h2><p>Cuéntanos qué necesitas para tu casa o negocio. Trabajamos en todo Chiloé y te responderemos con una solución clara y a tu medida.</p><a class="whatsapp-link" href="https://wa.me/56953713781?text=Hola%20KAILINK%2C%20quiero%20cotizar%20un%20servicio." target="_blank" rel="noreferrer"><span class="whatsapp-icon">◔</span> Escribir por WhatsApp <b>↗</b></a></div>
+          <form class="contact-form reveal" id="contactForm" action="https://formsubmit.co/kailinktelecom@gmail.com" method="POST"><input type="hidden" name="_subject" value="Nueva cotización KAILINK">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table"><label>Nombre<input required name="nombre" placeholder="Tu nombre" /></label><label>Correo electrónico<input required type="email" name="email" placeholder="tu@correo.com" /></label><label>¿Cómo podemos ayudarte?<textarea required name="mensaje" rows="4" placeholder="Cuéntanos brevemente qué necesitas en tu casa o negocio"></textarea></label><button class="button primary" type="submit">Enviar consulta <span>↗</span></button><p class="form-status" aria-live="polite"></p></form>
+        </section>
+      </main>
+      <footer class="footer"><a class="brand" href="#inicio" aria-label="Kailink, inicio"><img src="assets/kailink-logo-transparent.png" alt="KAILINK" /></a><p>© <span id="year"></span> KAILINK. Conectamos lo que importa.</p><a href="#inicio">Volver arriba ↑</a></footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
